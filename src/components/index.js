@@ -27,6 +27,10 @@ import RouterEnter from './auth/RouterEnter';
 import Cssmodule from './cssmodule';
 import MapUi from './ui/map';
 import QueryParams from './extension/QueryParams';
+import Test from './pages/test/Main'
+import TestEdit from './pages/test/test_edit/Main'
+import User from './pages/user_manage/Index'
+import UserEdit from './pages/user_manage/UserEditIndex'
 
 const WysiwygBundle = Loadable({ // 按需加载富文本配置
     loader: () => import('./ui/Wysiwyg'),
@@ -38,5 +42,5 @@ export default {
     Echarts, Recharts, Icons, Buttons, Spins, Modals, Notifications,
     Tabs, Banners, Drags, Dashboard, Gallery, BasicAnimations,
     ExampleAnimations, AuthBasic, RouterEnter, WysiwygBundle,
-    Cssmodule, MapUi, QueryParams
+    Cssmodule, MapUi, QueryParams, Test, TestEdit, User, UserEdit
 }

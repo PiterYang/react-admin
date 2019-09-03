@@ -7,6 +7,8 @@ import * as config from './config';
 
 export const getBbcNews = () => get({ url: config.NEWS_BBC });
 
+export const getUsers = () => get({url: 'http://10.0.6.13:5000/v1/audiences?goldeneye_id=2&filter_by=temporary:1&per_page=10&page=1'})
+
 export const npmDependencies = () => axios.get('./npm.json').then(res => res.data).catch(err => console.log(err));
 
 export const weibo = () => axios.get('./weibo.json').then(res => res.data).catch(err => console.log(err));

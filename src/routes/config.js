@@ -68,6 +68,17 @@ export default {
                 { key: '/app/extension/queryParams', title: '问号形式参数', component: 'QueryParams', query: '?param1=1&param2=2' },
             ],
         },
+        {
+            key: '/app/test', title: '测试系统', icon: 'star',
+            subs: [
+                {key: '/app/test/index', title: '测试列表', component: 'Test'},
+                {key: '/app/test/edit', title: '测试编辑', component: 'TestEdit'},
+                {key: '/app/user', title: '用户列表', component: 'User'}
+            ]
+        },
+        
     ],
-    others: [] // 非菜单相关路由
+    others: [
+        { key: '/app/user/edit/:id', title: '用户', component: 'UserEdit' },
+    ] // 非菜单相关路由
 }
