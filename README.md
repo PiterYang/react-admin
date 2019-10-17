@@ -163,15 +163,27 @@ yarn build or npm run build
 ```
 
 ### 结尾
-该项目会不定时更新，后续时间会添加更多的模块
 
-欢迎和感谢大家PR~~👏👏
+### vs code 插件和配置
 
-若有问题，可加QQ群与我交流
+### vscode 配置
+```
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    "eslint.autoFixOnSave": true,
+    "editor.fontSize": 14,
+    "vetur.format.options.useTabs": true,
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": 0,
+```
 
-- 1群：264591039（已满）
-- 2群：592688854（已满）
-- 3群：743490497 (已满)
-- 4群：150131600
-
-如果对你有帮助，给个star哟~~❤️❤️❤️❤️
+### vscode 插件安装
+必装插件
+* EditorConfig for VS Code
+* ESLint
